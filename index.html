@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ragini Singh Thakur | Business Analyst</title>
+
+    <!-- Premium Typography Pairing -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --bg: #fcfcfc;
+            --text-primary: #111111;
+            --text-secondary: #6b7280;
+            --accent: #111111;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 80px 24px;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.8rem, 5vw, 3.8rem);
+            font-weight: 600;
+            letter-spacing: -0.03em;
+            margin-bottom: 32px;
+        }
+
+        .subtitle {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: var(--text-secondary);
+            line-height: 1.9;
+            max-width: 620px;
+            margin: 0 auto 90px auto;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+            gap: 56px;
+            flex-wrap: wrap;
+        }
+
+        .link-item {
+            position: relative;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--text-primary);
+            padding-bottom: 6px;
+            transition: opacity 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .link-item svg {
+            width: 14px;
+            height: 14px;
+            stroke: currentColor;
+            stroke-width: 1.4;
+            opacity: 0.55;
+        }
+
+        .link-item::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--accent);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .link-item:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+
+        .link-item:hover {
+            opacity: 0.75;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 60px 20px;
+            }
+
+            .links {
+                gap: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ragini Singh Thakur</h1>
+
+        <p class="subtitle">
+            Business Analyst specializing in data-driven product strategy and financial modeling. 
+            I translate complex datasets into clear, actionable insight that informs leadership decisions and drives sustainable growth.
+        </p>
+
+        <div class="links">
+
+            <a href="resume.pdf" class="link-item">
+                <svg fill="none" viewBox="0 0 24 24">
+                    <path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/>
+                    <path d="M14 3v5h5"/>
+                </svg>
+                Resume
+            </a>
+
+            <a href="mailto:raginisinghthakur28@outlook.com" class="link-item">
+                <svg fill="none" viewBox="0 0 24 24">
+                    <path d="M4 4h16v16H4z"/>
+                    <path d="M22 6l-10 7L2 6"/>
+                </svg>
+                Email
+            </a>
+
+            <a href="https://linkedin.com/in/ragini-singh-thakur" target="_blank" class="link-item">
+                <svg fill="none" viewBox="0 0 24 24">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                    <path d="M15 3h6v6"/>
+                    <path d="M10 14L21 3"/>
+                </svg>
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
